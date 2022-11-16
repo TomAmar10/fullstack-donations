@@ -1,0 +1,37 @@
+.Main {
+  padding: 2rem;
+}
+
+button {
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 1rem;
+  cursor: pointer;
+  max-width: content;
+}
+
+.submit-btn {
+  background-color: rgb(90, 209, 90);
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: lighter;
+  margin: 0.5rem;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  background-color: red;
+}
+
+.top-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+.top-buttons > span > .navLink {
+  font-size: 1rem;
+  margin: 1rem;
+  font-weight: lighter;
+  color: black;
+}
