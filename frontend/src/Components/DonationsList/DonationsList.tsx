@@ -2,8 +2,7 @@ import "./DonationsList.css";
 import { useEffect, useState } from "react";
 import DonationModel from "../../models/donation-model";
 import service from "../../services/donation-service";
-import { NavLink, useNavigate } from "react-router-dom";
-import { Server } from "http";
+import { useNavigate } from "react-router-dom";
 
 function DonationsList(props: any): JSX.Element {
   const [donations, setDonations] = useState<DonationModel[]>();
@@ -48,8 +47,12 @@ function DonationsList(props: any): JSX.Element {
                 <td>{d.family}</td>
                 <td>{d.amount}</td>
                 <td>{d.payment}</td>
-                <td onClick={() => editClick(d)}>✍️</td>
-                <td onClick={() => deleteDonation(d.id)}>❌</td>
+                <td onClick={() => editClick(d)}>
+                  <span>✍️</span>
+                </td>
+                <td onClick={() => deleteDonation(d.id)}>
+                  <span>❌</span>
+                </td>
               </tr>
             ))}
           </tbody>

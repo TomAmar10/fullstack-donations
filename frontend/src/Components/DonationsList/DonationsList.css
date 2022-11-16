@@ -21,3 +21,7 @@ th {
 table span {
   cursor: pointer;
 }
+
+td > span {
+  cursor: pointer;
+}
